@@ -29,15 +29,21 @@ This repository provides a complete pipeline for preparing datasets for LayoutLM
 	- Processed data is saved as CSV files in the `output/` directory.
 	- Each PDF has a corresponding output CSV file (e.g., `output/test_pdf1_output.csv`).
 
+
 ## Test Notebook
 
-A test notebook is provided at `notebooks/layoutlm_ds_prep.ipynb` to demonstrate and validate the pipeline.
+A test notebook is provided at [`notebooks/layoutlm_ds_prep.ipynb`](https://github.com/nimrisha26/LayoutLMDatasetPrep/blob/main/notebooks/layoutlm_ds_prep.ipynb) to demonstrate and validate the pipeline.
+
 
 ## Output Locations
 
 - **Outputs:** `output/<pdf_name>_output.csv`
 - **PDFs:** `pdf/<pdf_name>.pdf`
-- **highlight_images** `highlight_images/'
+- **highlight_images:** `highlight_images/`
+
+**GitHub Output Locations Link:**
+[View Output Folder](https://github.com/nimrisha26/LayoutLMDatasetPrep/tree/main/output)
+[View Highlighted Images](https://github.com/nimrisha26/LayoutLMDatasetPrep/tree/main/highlight_images)
 
 
 ## Setup Instructions
@@ -84,11 +90,16 @@ An interactive Streamlit app is provided for easy PDF upload, processing, and vi
 	- Download the output CSV
 	- View highlighted images for each page using a dropdown selector
 
+
 ### Demo Video
 
 A demo video showing the app workflow (uploading a PDF, displaying the output, and viewing highlighted images) is available in the `videos/` folder:
 
 - `videos/Streamlit Layout LM DS Prep Video.mp4`
+
+**GitHub Video Link:**
+<!-- Replace the URL below with your actual GitHub video link -->
+[Watch Demo Video on GitHub](https://github.com/nimrisha26/LayoutLMDatasetPrep/blob/main/videos/Streamlit%20Layout%20LM%20DS%20Prep%20Video.mp4)
 
 ---
 
