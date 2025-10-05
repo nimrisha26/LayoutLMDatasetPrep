@@ -1,4 +1,5 @@
 
+
 # LayoutLMDatasetPrep
 
 This repository provides a complete pipeline for preparing datasets for LayoutLM-based models. The process involves extracting images and text from PDFs, performing header tagging, identifying content blocks and tables, tokenizing, chunking, and generating output files for downstream tasks.
@@ -39,6 +40,10 @@ A test notebook is provided at [`notebooks/layoutlm_ds_prep.ipynb`](https://gith
 - [View Output Folder](https://github.com/nimrisha26/LayoutLMDatasetPrep/tree/main/output)
 - [View Highlighted Images](https://github.com/nimrisha26/LayoutLMDatasetPrep/tree/main/highlight_images)
 
+***In the highlighted images***:
+- **Headers** are highlighted in **blue**
+- **Tables** are highlighted in **green**
+
 
 ## Setup Instructions
 
@@ -77,13 +82,13 @@ An interactive Streamlit app is provided for easy PDF upload, processing, and vi
 	```sh
 	streamlit run src/app/main.py
 	```
+
 3. The app will open in your browser. You can:
 	- Upload a PDF file
 	- Run OCR and dataset preparation
 	- View extracted data in a table
 	- Download the output CSV
 	- View highlighted images for each page using a dropdown selector
-
 
 ### Demo Video
 
@@ -95,5 +100,13 @@ A demo video showing the app workflow (uploading a PDF, displaying the output, a
 <!-- Replace the URL below with your actual GitHub video link -->
 [Watch Demo Video on GitHub](https://github.com/nimrisha26/LayoutLMDatasetPrep/blob/main/videos/Streamlit%20Layout%20LM%20DS%20Prep%20Video.mp4)
 
----
+
+## Limitations and Further Enhancements
+
+- **Header Tagging:**
+	- Header tagging is not always perfect; in some cases, general text may be incorrectly tagged as a header.
+	- Further improvements can be made by applying additional rules and ensemble-based labelling techniques, such as using multiple labelling functions.
+
+- **Table Detection:**
+	- Tables are mostly tagged correctly, except for a few rare cases where detection may fail or be inaccurate.
 
