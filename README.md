@@ -16,7 +16,7 @@ This repository provides a complete pipeline for preparing datasets for LayoutLM
 	- Custom rule-based logic is applied to the extracted text to identify and tag headers.
 
 4. **Identifying Tables using imag2table**
-	- The [imag2table](https://github.com/naiveHobo/imag2table) library is used to detect and extract tables from the page images.
+	- The [img2table](https://pypi.org/project/img2table/) library is used to detect and extract tables from the page images.
 
 6. **Tokenization**
 	- The text content is tokenized using a LayoutLM-compatible tokenizer.
@@ -35,15 +35,9 @@ This repository provides a complete pipeline for preparing datasets for LayoutLM
 A test notebook is provided at [`notebooks/layoutlm_ds_prep.ipynb`](https://github.com/nimrisha26/LayoutLMDatasetPrep/blob/main/notebooks/layoutlm_ds_prep.ipynb) to demonstrate and validate the pipeline.
 
 
-## Output Locations
-
-- **Outputs:** `output/<pdf_name>_output.csv`
-- **PDFs:** `pdf/<pdf_name>.pdf`
-- **highlight_images:** `highlight_images/`
-
 **GitHub Output Locations Link:**
-[View Output Folder](https://github.com/nimrisha26/LayoutLMDatasetPrep/tree/main/output)
-[View Highlighted Images](https://github.com/nimrisha26/LayoutLMDatasetPrep/tree/main/highlight_images)
+- [View Output Folder](https://github.com/nimrisha26/LayoutLMDatasetPrep/tree/main/output)
+- [View Highlighted Images](https://github.com/nimrisha26/LayoutLMDatasetPrep/tree/main/highlight_images)
 
 
 ## Setup Instructions
